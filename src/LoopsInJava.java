@@ -87,6 +87,46 @@ public class LoopsInJava {
         System.out.println();
 
         // Break and Continue Statements
+        // 1. The break statement is used to exit a loop immediately, skipping the remaining iterations.
+        // 2. The continue statement is used to skip the current iteration of a loop and move to the next iteration.
 
+        // example using break to exit a loop when a certain condition is met
+        for (int num = 1; num <= 10; num++) {
+            if (num == 5) {
+                break;
+            }
+            System.out.print(num + " "); // 1 2 3 4
+        }
+
+        // In this example, the loop will print the numbers 1, 2, 3, and 4, and then exit when num is equal to 5.
+
+        System.out.println();
+
+        // example using continue to skip an iteration when a certain condition is met
+        for (int z = 1; z <= 10; z++) {
+            if (z == 5) {
+                continue;
+            }
+            System.out.print(z + " ");
+        }
+
+        System.out.println();
+
+        // In this example, the loop will print the numbers 1, 2, 3, 4, 6, 7, 8, 9, and 10, skipping the iteration when z is equal to 5.
+
+        // Exercise Time: Hurray!
+
+        // Exercise 4.1: Write a Java program that calculates the sum of all even numbers between 1 and 100 using a for loop. then display the sum in the console/terminal
+        int sum = 0;
+
+        for (int num = 1; num <= 100; num++) {
+            if (num % 2 == 0) {
+                sum += num;
+            }
+        }
+
+        System.out.println("The sum of all even numbers between 1 and 100 is: " + sum);
+
+        // Now -> Getting input from the keyboard (user) -> Create a new project - GettingInputFromUser.java
     }
 }
